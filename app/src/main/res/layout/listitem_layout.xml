@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginTop="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="280dp"
+        android:layout_height="600dp"
+        app:cardCornerRadius="7dp"
+        app:cardMaxElevation="7dp"
+        app:cardElevation="5dp"
+        android:layout_centerInParent="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/dateTextView"
+                android:text="2019-20-01"
+                android:textSize="30sp"
+                android:textColor="#000"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="560dp"
+                android:layout_below="@+id/dateTextView"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:scrollbars="vertical"
+                android:gravity="center_horizontal"
+                android:id="@+id/weatherTextView"
+
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>>
+
+</RelativeLayout>
